@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="~/Controls/ucHeader.ascx" TagName="ucHeader" TagPrefix="nit" %>
+<%@ Register Src="~/Controls/ucFooter.ascx" TagName="ucFooter" TagPrefix="nit" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   <script src="Scripts/jquery-2.1.1.js" type="text/javascript" ></script>
+    <script src="Scripts/jquery-ui-1.10.4.js" type="text/javascript" ></script>
+    <script src="Scripts/jquery-ui-1.10.4.min.js" type="text/javascript" ></script>
+     <link rel="stylesheet" href="Styles/jQueryThemes/le-frog/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="Styles/jQueryThemes/le-frog/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="Styles/jQueryThemes/le-frog/theme.css" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            document.bgColor ="#5bc3ff";
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>
+    <div style="padding:2px" cellspacing="0" cellpadding="0" border="0">
+         <table align="center" cellspacing="0" cellpadding="0" border="0" style="border:2px solid #00a000;border-radius:13px;background-color:white">
+<tr><td>
+        
+        <nit:ucHeader ID="ucHeader1" runat="server" />
+    </td></tr>
+            <tr><td style="height:430px" >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td></tr>
+            <tr>
+                <td>
+                    <nit:ucFooter ID="ucFooter1" runat="server" />
+                </td>
+            </tr>
+      </table>
+        
+    </div>
+    </form>
+</body>
+</html>

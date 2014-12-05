@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<%@ Register Src="~/Admin/Controls/ucHeader.ascx" TagName="ucHeader" TagPrefix="er" %>
+<%@ Register Src="~/Admin/Controls/ucFooter.ascx" TagName="ucFooter" TagPrefix="er" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> EventReminder Welcome to Administrator</title>
+    <script src="../Scripts/jquery-2.1.1.js" type="text/javascript" ></script>
+    <script src="../Scripts/jquery-ui-1.10.4.js" type="text/javascript" ></script>
+    <script src="../Scripts/jquery-ui-1.10.4.min.js" type="text/javascript" ></script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+       <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>
+         <div> 
+        <table style="width:100%;border:2px solid lightgray;border-color:gray;border-radius:5px">
+            <tr>
+                <td>
+                  <er:ucHeader ID="ucHeader1" runat="server" /> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <er:ucFooter ID="ucFooter1" runat="server" />
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

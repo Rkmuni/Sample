@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageControlPanel.master.cs" Inherits="Admin_MasterPageControlPanel" MasterPageFile="~/Admin/MasterPage.master" %>
+<asp:Content ID="content1" runat="server" ContentPlaceHolderID ="ContentPlaceHolder1" >
+<table style="width:100%">
+       <tr>
+           <td width="40%">
+               <div id="divVisitedTime">
+               <asp:Label ID="lblVisitedTime" runat="server" ></asp:Label>
+                   </div></td>
+           <td width="50%"><asp:HyperLink ID="HyperLink1" runat="server" Text="Admin Control Panel" NavigateUrl="~/Admin/ControlPanel.aspx"></asp:HyperLink></td>
+           <td align="right" width="10%">
+               <asp:LinkButton ID="lnkBtnSignOut" runat="server" class="signOut" Text="Sign-Out" OnClick="lnkBtnSignOut_Click" CausesValidation="false">
+
+               </asp:LinkButton>
+           </td>
+       </tr>
+       <tr>
+           <td colspan="3">
+               <asp:ContentPlaceHolder ID="ControlPanelContentPlaceHolder" runat="server" >
+
+               </asp:ContentPlaceHolder>
+           </td>
+       </tr>
+   </table>    
+</asp:Content>

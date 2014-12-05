@@ -1,0 +1,58 @@
+﻿body {
+    font-family:Tahoma;
+}
+.header {
+font-family:Tahoma;
+font-size:30px;
+font-weight:bold;
+color:green;
+text-shadow:2px 2px red;
+text-align:right;
+}
+
+.footer {
+font-size:15px;
+font-family:Tahoma;
+font-weight:bold;
+color:white;
+background-color:green;
+text-shadow:2px 2px gray;
+text-align:center;
+height:30px;
+}
+
+.labelStyle {
+font-family:Tahoma;
+font-size:15px;
+font-weight:bold;
+text-align:left;
+color:#4d4a4a;
+}
+
+.highlightError {
+background-color:yellow;
+border:1px solid red;
+}
+
+.textBoxStyle {
+font-family:Tahoma;
+font-size:12px;
+border:1px solid darkgray;
+background-color:#ffffcc;
+color:#5c5c5c;
+width:150px;
+}
+.divBox {
+            width:295px;
+            height:35px;
+            line-height:35px;
+            border:2px solid green;
+            border-radius:20px;
+            padding:5px;
+            margin:5px;
+            float:left;
+            color:blue;
+            text-align:center;
+            background-color:#ffffcc;
+            box-shadow:green 5px 5px;
+            }
